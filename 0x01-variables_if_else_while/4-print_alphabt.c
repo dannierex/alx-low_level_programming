@@ -7,16 +7,15 @@
 
 int main(void)
 {
-	char c = 'a';
+	char c;
 
-	while (c <= 'z')
-	{
-		if (c != 'q' && c != 'e')
+	c = 'a';
+	while
+		(c <= 'z') {
+			if ((c != 'q' && c != 'e') && c <= 'z')
+				putchar(c);
+			c++;
 		}
-	{
-		putchar(c);
-		c++;
-	}
 	putchar('\n');
 	return (0);
 }
